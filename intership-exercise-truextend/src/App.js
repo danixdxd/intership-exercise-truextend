@@ -6,6 +6,8 @@ import RepositoriesPage from "../src/components/pages/RepositoriesPage";
 import AboutPage from "../src/components/pages/AboutPage";
 import ErrorPage from "../src/components/pages/ErrorPage";
 
+import './styles/templates/App.css';
+
 function App() {
   return (
       <Switch>
