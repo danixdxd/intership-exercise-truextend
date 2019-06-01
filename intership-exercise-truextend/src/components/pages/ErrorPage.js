@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'; 
+import { Segment } from 'semantic-ui-react';
 
-const ErrorPage = () => {
-    return(<div>
-        ErrorPage
-    </div>);
-}
+const ErrorPage = () => (
+    <Segment inverted>
+        Error: That path does not exist!
+    </Segment>
+)
+
 export default ErrorPage;
