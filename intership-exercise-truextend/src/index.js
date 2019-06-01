@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+import { Segment } from 'semantic-ui-react';
+import "semantic-ui-css/semantic.min.css";
+
+ReactDOM.render(
+    <BrowserRouter>
+        <Segment inverted>
+            <Navigation/>
+            <App/>
+            <Footer/>
+        </Segment>
+    </BrowserRouter>,
+document.getElementById('root'));
 serviceWorker.unregister();
